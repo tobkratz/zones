@@ -15,3 +15,13 @@ steps:
   commands: 
   - nix run -I 'nixpkgs=channel:nixos-unstable' nixpkgs.bind nixpkgs.bash -c bash checkzones
   - nix run -I 'nixpkgs=channel:nixos-unstable' nixpkgs.bind nixpkgs.bash -c bash dn42/checkzones
+steps:
+- name: notify
+  image: plugins/matrix
+  settings:
+    homeserver: https://litschi.xyz
+    roomid: !oluuLjSMgyzTBlZiZl:litschi.xyz
+    username:
+      from_secret: user
+    password:
+      from_secret: password
