@@ -13,5 +13,5 @@ steps:
 - name: test
   image: nixos/nix
   commands: 
-  - nix run -I 'nixpkgs=channel:nixos-unstable' nixpkgs.bind -c bash checkzones
-  - nix run -I 'nixpkgs=channel:nixos-unstable' nixpkgs.bind -c bash dn42/checkzones
+  - nix run -I 'nixpkgs=channel:nixos-unstable' nixpkgs.bind nixpkgs.bash -c bash checkzones
+  - nix run -I 'nixpkgs=channel:nixos-unstable' nixpkgs.bind nixpkgs.bash -c bash dn42/checkzones
