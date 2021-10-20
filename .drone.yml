@@ -1,0 +1,13 @@
+---
+kind: pipeline
+type: docker
+name: bind zone test
+platform:
+  os: linux
+  arch: amd64
+steps:
+- name: test
+  image: nixos/nix
+  commands: 
+  - nix run -I 'nixpkgs=channel:nixos-unstable' nixpkgs.bind -c bash checkzones
+  - nix run -I 'nixpkgs=channel:nixos-unstable' nixpkgs.bind -c bash dn42/checkzones
