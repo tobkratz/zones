@@ -15,7 +15,6 @@ steps:
   commands: 
   - nix run -I 'nixpkgs=channel:nixos-unstable' nixpkgs.bind nixpkgs.bash -c bash checkzones
   - nix run -I 'nixpkgs=channel:nixos-unstable' nixpkgs.bind nixpkgs.bash -c bash dn42/checkzones
-steps:
 - name: notify
   image: plugins/matrix
   settings:
