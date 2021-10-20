@@ -20,7 +20,7 @@ steps:
   image: plugins/matrix
   settings:
     homeserver: https://litschi.xyz
-    roomid: !oluuLjSMgyzTBlZiZl:litschi.xyz
+    roomid: oluuLjSMgyzTBlZiZl:litschi.xyz
     username:
       from_secret: user
     password:
