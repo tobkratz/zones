@@ -11,13 +11,14 @@ $TTL 86400
 
 ; nameserver
                 NS      ns1.litschi.xyz. 
-		NS
+		NS	ns2.litschi.xyz.
 
 $ORIGIN litschi.kiwi.
 
 ; general
 core1 		CNAME	core1.litschi.xyz.
 core2 		CNAME 	core2.litschi.xyz.
+core3
 
 @		A	88.198.92.130
 @		AAAA 	2a01:4f8:c0c:4f7a::1
