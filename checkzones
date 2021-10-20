@@ -1,0 +1,12 @@
+#!/usr/bin/env
+N_FAILED=0
+
+for ZONEFILE in $(ls db.*); do
+    DOMAIN=$(grep "^\$ORIGIN" $ZONEFILE | cut -d' ' -f2)
+    echo "Checking $DOMAIN (file: $ZONEFILE)"
+    named-checkzone $DOMAIN $ZONEFILE || let N_FAILED+=1
+done
+
+echo "$N_FAILED failed checks."
+test $N_FAILED -eq 0  # determines total ci status
+
