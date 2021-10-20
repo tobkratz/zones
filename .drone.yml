@@ -14,7 +14,17 @@ steps:
   image: nixos/nix
   commands: 
   - nix run -I 'nixpkgs=channel:nixos-unstable' nixpkgs.bind nixpkgs.bash -c bash checkzones
-  - nix run -I 'nixpkgs=channel:nixos-unstable' nixpkgs.bind nixpkgs.bash -c bash dn42/checkzones
+  - cd dn42
+  - nix run -I 'nixpkgs=channel:nixos-unstable' nixpkgs.bind nixpkgs.bash -c bash checkzones
+- name: deploy
+  image: nixos/nix
+  volumes:
+  - name: zones
+    path: /dns
+  commands:
+  - rm -rf /dns/db.* && rm -rf /dns/dn42/db.*
+  - cp db.* /dns/
+  - cp dn42/db.* /dns/dn42
 - name: notify
   image: plugins/matrix
   settings:
@@ -24,3 +34,7 @@ steps:
       from_secret: user
     password:
       from_secret: password
+volumes: 
+  - name: zones
+    host:
+      path: /var/dns/
