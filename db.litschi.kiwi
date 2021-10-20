@@ -18,11 +18,12 @@ $ORIGIN litschi.kiwi.
 ; general
 core1 		CNAME	core1.litschi.xyz.
 core2 		CNAME 	core2.litschi.xyz.
-core3
+core3		CNAME 	core3.litschi.xyz.
 
 @		A	88.198.92.130
 @		AAAA 	2a01:4f8:c0c:4f7a::1
 
+*		CNAME 	core1
 
 ; openTTD (only A since TTD fails to connect to IPv6
 td		A	88.198.92.130
