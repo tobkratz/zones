@@ -1,7 +1,7 @@
 ; Zone file for litschi.dev
 $TTL 86400
 
-@       IN      SOA     ns1.litschi.dev. litschi.darmstadt.ccc.de.  (
+@       IN      SOA     ns1.litschi.dev. ns2.litschi.dev. litschi.darmstadt.ccc.de.  (
                         2021020501	; serial number YYMMDDNN
                         28800           ; Refresh
                         7200            ; Retry
@@ -32,6 +32,7 @@ core3 		CNAME 	core3.litschi.xyz.
 
 ; services 
 git 		CNAME 	core1
+sr-cloud 	CNAME 	core1
 pad		CNAME 	core2
 cloud 		CNAME 	core2
 gorleben	CNAME 	core2
