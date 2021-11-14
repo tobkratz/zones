@@ -1,7 +1,7 @@
 ; Zone file for tobkratz.de
 $TTL 86400
 
-@       IN      SOA     ns1.litschi.xyz.   litschi.darmstadt.ccc.de    (
+@       IN      SOA     ns1.litschi.xyz.   litschi.darmstadt.ccc.de.    (
                         2021020501	; serial number YYMMDDNN
                         28800           ; Refresh
                         7200            ; Retry
@@ -13,7 +13,7 @@ $TTL 86400
                 NS      ns1.litschi.xyz. 
 		NS	ns2.litschi.xyz.
 
-$ORIGIN tobkratz.de
+$ORIGIN tobkratz.de.
 
 ; general
 core1 		CNAME	core1.litschi.xyz.

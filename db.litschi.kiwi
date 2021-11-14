@@ -1,7 +1,7 @@
 ; Zone file for litschi.kiwi
 $TTL 86400
 
-@       IN      SOA     ns1.litschi.xyz.   litschi.darmstadt.ccc.de    (
+@       IN      SOA     ns1.litschi.xyz.   litschi.darmstadt.ccc.de.    (
                         2021020501	; serial number YYMMDDNN
                         28800           ; Refresh
                         7200            ; Retry
