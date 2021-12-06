@@ -31,8 +31,12 @@ core3 		CNAME 	core3.litschi.xyz.
 * 		CNAME 	core1
 
 ; services 
-git 		CNAME 	core1
-sr-cloud 	CNAME 	core1
+git 		A	88.198.92.130
+		AAAA 	2a01:4f8:c0c:4f7a::1
+
+sr-cloud	A	88.198.92.130
+		AAAA 	2a01:4f8:c0c:4f7a::1
+ 
 pad		CNAME 	core2
 cloud 		CNAME 	core2
 gorleben	CNAME 	core2
