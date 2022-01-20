@@ -32,6 +32,8 @@ core2-public	AAAA 	fd67:24bd:a1ea:5656::3
 @		A	172.23.73.65
 @		AAAA 	fd67:24bd:a1ea::1
 
+lg		CNAME 	ns1
+
 ; home
 mag		CNAME 	core2 
 stream 		CNAME 	core2
