@@ -13,9 +13,9 @@ steps:
 - name: test
   image: nixos/nix
   commands: 
-  - nix run -I 'nixpkgs=channel:nixos-unstable' nixpkgs.bind nixpkgs.bash -c bash checkzones
+  - nix-shell -p bash bind --run bash checkzones
   - cd dn42
-  - nix run -I 'nixpkgs=channel:nixos-unstable' nixpkgs.bind nixpkgs.bash -c bash checkzones
+  - nix-shell -p bash bind --run bash checkzones
 - name: deploy
   image: nixos/nix
   volumes:
