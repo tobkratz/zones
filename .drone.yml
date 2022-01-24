@@ -13,11 +13,9 @@ steps:
 - name: test
   image: nixos/nix
   commands: 
-  - curl http://ifconfig.co
-    #  - nix-channel --update
-    #- nix-shell -I 'nixpkgs=channel:nixos-unstable' -p bash bind --run 'bash checkzones'
-    #- cd dn42
-    #- nix-shell -I 'nixpkgs=channel:nixos-unstable' -p bash bind --run 'bash checkzones' 
+  - nix-shell -I 'nixpkgs=channel:nixos-unstable' -p bash bind --run 'bash checkzones'
+  - cd dn42
+  - nix-shell -I 'nixpkgs=channel:nixos-unstable' -p bash bind --run 'bash checkzones' 
 - name: deploy
   image: nixos/nix
   volumes:
