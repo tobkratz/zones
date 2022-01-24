@@ -13,6 +13,7 @@ steps:
 - name: test
   image: nixos/nix
   commands: 
+  - nix-channel --update
   - nix-shell -I 'nixpkgs=channel:nixos-unstable' -p bash bind --run 'bash checkzones'
   - cd dn42
   - nix-shell -I 'nixpkgs=channel:nixos-unstable' -p bash bind --run 'bash checkzones' 
