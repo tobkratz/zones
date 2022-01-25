@@ -80,5 +80,8 @@ ns1.dn42 	AAAA 	2a01:4f8:c0c:d4c1::2
 dn42 		A	116.203.1.5
 dn42 		AAAA 	2a01:4f8:c0c:d4c1::2
 
+lg.dn42 	A	116.203.1.5
+lg.dn42 	AAAA 	2a01:4f8:c0c:d4c1::2
+
 core1.dn42 	A	116.203.1.5
 core1.dn42 	AAAA 	2a01:4f8:c0c:d4c1::2
