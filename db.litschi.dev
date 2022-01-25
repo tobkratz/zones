@@ -41,3 +41,4 @@ pad		CNAME 	core2
 cloud 		CNAME 	core2
 gorleben	CNAME 	core2
 archive 	CNAME 	core2
+mattermost	CNAME 	core1
