@@ -1,4 +1,4 @@
-; Zone file for litschi.kiwi
+; Zone file for litschi.xyz
 $TTL 86400
 
 @       IN      SOA     ns1.litschi.xyz.   litschi.darmstadt.ccc.de    (
