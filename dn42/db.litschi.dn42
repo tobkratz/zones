@@ -24,22 +24,11 @@ milliways 	A	172.23.73.67
 
 core2 		A 	172.23.73.100
 core2 		AAAA 	fd67:24bd:a1ea:5656::2
-core2-public 	A	172.23.73.101
-core2-public	AAAA 	fd67:24bd:a1ea:5656::3
-
+gorleben 	CNMAE 	core2
 
 ; general
 @		A	172.23.73.65
 @		AAAA 	fd67:24bd:a1ea::1
 
+; services
 lg		CNAME 	ns1
-
-; home
-mag		CNAME 	core2 
-stream 		CNAME 	core2
-music 		CNAME  	core2
-netbox		CNAME 	core2
-public 		CNAME   core2-public
-archive 	CNAME 	core2 
-
-eddi		A	172.23.73.99
