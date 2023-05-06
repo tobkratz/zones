@@ -24,8 +24,8 @@ ns2 		AAAA 	2a01:4f8:1c17:c638::1
 
 core1 		A	88.198.92.130
 core1 		AAAA 	2a01:4f8:c0c:4f7a::1
-core2 		A	5.10.172.50
-;core2 		AAAA 	2a01:4f8:c0c:4f7a::3
+core2 		A	84.136.92.201
+core2 		AAAA 	2003:e5:3f0b:f00::1
 core3 		A       49.12.208.154	
 core3 		AAAA 	2a01:4f8:1c17:c638::1
 
@@ -41,37 +41,12 @@ mx		A	88.198.92.130
 _dmarc		10800	IN	TXT	"v=DMARC1; p=none"
 @		TXT	"v=spf1 ip4:88.198.92.130 -all"
 @		MX 	0	mx 
+
 ; matrix
 matrix 		CNAME 	core1
 _matrix._tcp  	3600	IN	SRV	0 0 8448 litschi.xyz.
 
-; services
-wwww 		CNAME 	core1
-blog 		CNAME	core1
-bw 		CNAME 	core1
-chat 		CNAME 	core1
-drone 		CNAME 	core1
-git 		CNAME 	core1
-stats 		CNAME 	core1
-public 		CNAME 	core1 
-private 	CNAME 	core1
-webmail 	CNAME 	core1
-mail 		CNAME 	core1
-pad		CNAME 	core2
-;;; home 
-
-magrathea 	A	5.10.172.50
-;magrathea	AAAA 	2a01:4f8:c0c:4f7a::3
-
-;services	
-private.magrathea 	CNAME 	core2 
-
-e2m	 	A 	5.10.172.50	
-e2m 		MX	0	e2m
-
-
 ;;; dn42 container
-
 ; nameserver
 
 ns1.dn42 	A	116.203.1.5
