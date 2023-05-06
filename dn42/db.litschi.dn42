@@ -24,7 +24,7 @@ milliways 	A	172.23.73.67
 
 core2 		A 	172.23.73.100
 core2 		AAAA 	fd67:24bd:a1ea:5656::2
-gorleben 	CNMAE 	core2
+gorleben 	CNAME 	core2
 
 ; general
 @		A	172.23.73.65
