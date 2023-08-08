@@ -24,11 +24,12 @@ core3		CNAME 	core3.litschi.xyz.
 @		AAAA 	2a01:4f8:c0c:4f7a::1
 
 *		CNAME 	core1
-mx		CNAME	mx.litschi.xyz
+mx		A 	88.198.92.130
+mx		AAAA 	2a01:4f8:c0c:4f7a::1
 
 ;mail 
 
-@		MX 	0 	mx.tobkratz.de.
+@		MX 	0 	mx
 @			IN 	TXT 	"v=spf1 a a:mx.litschi.xyz a:mx.tobkratz.de ip4:88.198.92.130 ip6:2a01:4f8:c0c:4f7a::1 -all"
 _dmarc          10800   IN      TXT     "v=DMARC1; p=none"
 mail._domainkey 10800   IN      TXT     "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQChBaT+h99oqCYpB1Cp20MtTSgNfk76Y/YBelVNF+jRgHSvSy2WgTaBI+keshCwnaHs14uDN7RCGp2PQeSZMV2PL91dKR97vFMN6PLQMBk14nxhircJWiA7X9iJzorbDupALMwgC9iP4VG1N8CBcU2EYS8pYKrk+E2sx6vItqsG6wIDAQAB"  ; ----- DKIM key mail for tobkratz.de
